@@ -1,0 +1,346 @@
+/* homepage --------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h3, p, main {
+    text-align: right;
+    font-family: "Verdana", sans-serif;
+}
+
+#homepage, #aboutpage, #imagespage {
+    background-color: aliceblue
+}
+
+nav {
+    background-color: beige;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    margin-bottom: 5px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.navitem {
+    display: inline;
+    font-family: "Verdana", sans-serif;
+}
+
+a {
+    color: darkslategrey;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+.active {
+    background-color: darkslategray;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 10px 10px;
+}
+
+.name {
+    font-size: 5em;
+    margin-top: 3px;
+}
+
+.caption {
+    font-size: 2.8em;
+}
+
+.headshot {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.homepara {
+    font-size: 2.2em;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+.footeritem {
+    display: inline;
+    font-family: "Verdana", sans-serif;
+    list-style-type: none;
+}
+
+#return-link {
+    float: right;
+}
+
+
+/* About Page ---------------------------------*/
+
+.about-col {
+  flex: 33%;
+  max-width: 33%;
+  padding: 10px 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2, article, li {
+    font-family: "Verdana", sans-serif;
+}
+
+article {
+    text-align: justify;
+    line-height: 2em;
+    margin-left: 4px;
+    padding-top: 15px;
+}
+
+table {
+    margin-top: 40px;
+}
+
+#performingexperience {
+  font-family: "Verdana", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#performingexperience td, #performingexperience th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#performingexperience td {
+    text-align: center;
+}
+
+/* The following code to change the background-color of the even rows and change the color on hover was found at https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+
+#performingexperience tr:nth-child(even){background-color: #f2f2f2;}
+
+#performingexperience tr:hover {background-color: #ddd;}
+
+#performingexperience th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #EEF499;
+    color: white;
+}
+
+.repheading {
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+div ul {
+    line-height: 1.5em;
+}
+
+
+/* Images page ----------------------------------*/
+
+h4 {
+    font-family: "Verdana", sans-serif;
+}
+
+/* Guidance for this gallery section taken from https://www.w3schools.com/css/css_image_gallery.asp */
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  position: relative;
+  float: left;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
+div.imgcaption {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.imgcaption {
+    font-family: "Verdana", sans-serif;
+}
+
+/* Video Page ----------------------------------------*/
+
+/* Guidance on how to make embedded Youtube videos resonsive taken from https://avexdesigns.com/responsive-youtube-embed/ */
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+/*Contact Page --------------------------------------------*/
+
+.contact_column {
+    flex: 100%;
+    max-width: 70%;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+#contacttable {
+  font-family: "Verdana", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#contacttable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#contacttable tr:nth-child(even){background-color: #f2f2f2;}
+
+#contacttable tr:hover {background-color: #ddd;}
+
+.social-icons {
+  text-align: center;
+  margin-top: 70px;
+  }  
+
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  }
+
+.social-icons li a {
+  border-bottom: none;
+  }
+
+.social-icons li img {
+  width:90px;
+  height:90px;
+  margin-right: 20px;
+  transition: transform 3s;
+}
+
+/* Information on how to increase the size of an element on hover found at https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+
+.social-icons li img:hover {
+    transform: scale(1.5);
+}
+
+/* Media Queries ------------------------------ */
+
+@media (max-width: 650px) {
+    .column, .about-col, .contact_column {
+    flex: 100%;
+    max-width: 100%;
+    }
+    
+    h1, h3, p {
+    text-align: center;
+    }
+
+    .headshot {
+    margin-left: 10%;
+    }
+    
+    nav {
+        text-align: center;
+    }
+    
+    footer{
+        font-size: .8em
+    }
+    
+    li {
+        text-align: center;
+        list-style-type: none
+    }
+    
+    div ul {
+        padding: 0;
+    }
+    #performingexperience td {
+        text-align: left;
+    }
+    
+    #performingexperience th {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+  }
+  .social-icons li img {
+      margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+      width: 100%;
+  }
+}
